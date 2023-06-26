@@ -11,7 +11,7 @@ def positive_assert(name):
     response_kit = sender_stand_request.kit_create(kit_body)
     assert response_kit.status_code == 201
     assert response_kit.json()['name'] == name
- ''
+
 
 def negative_assert(kit_body):
     response_kit = sender_stand_request.kit_create(kit_body)
